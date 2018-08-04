@@ -45,7 +45,7 @@ You should see something like the following:
 
 .. note::
 
-   If VisiData encounters an error for the computation of a new cell (e.g., if you try to add ``"dog" + 42``), VisiData will display that cell's value as ``¿``.
+   If VisiData encounters an error for the computation of a new cell (e.g., if you try to add ``"dog" + 42``), VisiData will display that cell's value as ``!``.
 
 
 How to create new columns by splitting another one
@@ -59,7 +59,7 @@ For a simple example, let's say we want to split the ``INCIDENT_DATE`` column in
 
 - Navigate to the ``INCIDENT_DATE`` column
 - Press :kbd:`:`
-- At the prompt, type `` `` (a space), and then hit :kbd:`Enter`
+- At the prompt, type :kbd:` ` (a space), and then hit :kbd:`Enter`
 
 Once you do that, you should see something like this:
 

@@ -8,12 +8,14 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Working With Large Files &mdash; An Introduction to VisiData 2018-02-21 documentation</title>
+  <title>Working With Large Files &mdash; An Introduction to VisiData</title>
   
 
   
   
   
+  
+    <link rel="canonical" href="https://jsvine.github.io/intro-to-visidata/intermediate/large-files.html"/>
   
 
   
@@ -25,30 +27,21 @@
   
 
   
-  
     <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  
-
-  
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" type="text/css" />
-  
-    <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
-  
-
-  
-        <link rel="index" title="Index"
-              href="../../genindex/"/>
-        <link rel="search" title="Search" href="../../search/"/>
-    <link rel="top" title="An Introduction to VisiData 2018-02-21 documentation" href="../../"/>
-        <link rel="next" title="Reshaping Data" href="../reshaping-data/"/>
-        <link rel="prev" title="Joining Sheets" href="../joining-sheets/"/> 
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="Reshaping Data" href="../reshaping-data/" />
+    <link rel="prev" title="Joining Sheets" href="../joining-sheets/" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -66,13 +59,6 @@
           
           </a>
 
-          
-            
-            
-              <div class="version">
-                2018-02-21
-              </div>
-            
           
 
           
@@ -156,7 +142,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../">An Introduction to VisiData</a>
@@ -164,9 +150,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -211,7 +198,7 @@
 <p>VisiData handles moderately large files reasonably well. But if a particularly large file is slowing VisiData down, the tips and tricks below can help.</p>
 <div class="section" id="select-a-random-sample-of-rows">
 <h2>Select a random sample of rows<a class="headerlink" href="#select-a-random-sample-of-rows" title="Permalink to this headline">¶</a></h2>
-<p>In VisiData, you can create a randomly-sampled copy of any sheet. To do create a random-sample sheet, press <kbd class="kbd docutils literal notranslate">Shift-R</kbd>. At the the prompt, type the number of rows you’d like to include, and then press <kbd class="kbd docutils literal notranslate">Enter</kbd>.</p>
+<p>In VisiData, you can create a randomly-sampled copy of any sheet. To create a random-sample sheet, press <kbd class="kbd docutils literal notranslate">Shift-R</kbd>. At the the prompt, type the number of rows you’d like to include, and then press <kbd class="kbd docutils literal notranslate">Enter</kbd>.</p>
 </div>
 <div class="section" id="only-load-part-of-the-file">
 <h2>Only load part of the file<a class="headerlink" href="#only-load-part-of-the-file" title="Permalink to this headline">¶</a></h2>
@@ -227,7 +214,7 @@
 <div class="section" id="by-halting-the-loading-process">
 <h3>By halting the loading process<a class="headerlink" href="#by-halting-the-loading-process" title="Permalink to this headline">¶</a></h3>
 <p>You can also just press <kbd class="kbd docutils literal notranslate">Control-c</kbd> while the data is loading, which will halt the loading process. VisiData handles this gracefully, and you can continue using the program just as you would if you hadn’t halted the loading proces.</p>
-<p>This approach works well if you’re a data source that’s more complex than a CSV file, and if you don’t care exactly how many lines are loaded.</p>
+<p>This approach works well if you’re using a data source that’s more complex than a CSV file, and if you don’t care exactly how many lines are loaded.</p>
 </div>
 </div>
 <div class="section" id="caching-dynamic-columns">
@@ -240,9 +227,7 @@
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -264,7 +249,7 @@
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -282,7 +267,8 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2018-02-21',
+            VERSION:'',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'',
             HAS_SOURCE:  true,
@@ -300,14 +286,11 @@
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>
